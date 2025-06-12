@@ -43,7 +43,7 @@ jobs:
       steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
-        - uses: azure/kubectl@v4
+        - uses: azure/setup-kubectl
           with:
             version: v1.26.0
         - uses: azure/k8s-set-context@v3
